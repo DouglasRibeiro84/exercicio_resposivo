@@ -1,0 +1,123 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+.container{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container-flex{
+    display: flex;
+}
+
+header > .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    font-size: 1.5em;
+}
+
+header{
+    background-color: rgba(159, 21, 171, 0.578);
+    padding-top: 16px;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+header li {
+    list-style: none;
+    color: white;
+    display: inline;
+}
+
+nav{
+    text-align: center;
+    background-color: rgba(137, 43, 226, 0.331);
+    justify-content: space-between;
+    
+}
+
+.menu{
+    padding: 16px;
+
+}
+
+header li a{
+    color: white;
+    text-decoration: none;
+    padding: 2px 12px;
+    font-size: 1.2em;
+    border: 2px solid transparent;
+}
+
+header li a:hover{
+    border: 2px solid white;
+    border-radius: 12px;
+}
+
+header img{
+    width: 70px;
+    padding: 3px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.hamburguer{
+    width: 32px;
+    cursor: pointer;
+    padding-right: 8px;
+}
+
+
+.hamburguer span{
+    height: 2px;
+    width: 100%;
+    background-color: white;
+    display: block;
+    margin-bottom: 4px;
+}
+
+
+#sobre img{
+    max-width:  320px;
+    margin-right: 24px;
+}
+
+#sobre{
+    padding: 32px;
+}
+
+h2{
+    padding: 16px 4px;
+    border-bottom: 4px solid rgba(137, 43, 226, 0.331);
+    font-size: 1.5em;
+    font-weight: bold;
+    color: rgba(137, 43, 226, 0.605);
+}
+
+#sobre p {
+    padding: 44px 0;
+    font-size: 1.1em;
+}
+
+.conteudo{
+    display: grid;
+}
+
+.conteudo img{
+    max-width: 100%;
+}
+
+
+
+
+
