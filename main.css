@@ -23,6 +23,10 @@ header > .container {
     font-size: 1.5em;
 }
 
+nav{
+    display: none;
+}
+
 header{
     background-color: rgba(159, 21, 171, 0.578);
     padding-top: 16px;
@@ -107,17 +111,161 @@ h2{
 #sobre p {
     padding: 44px 0;
     font-size: 1.1em;
+
 }
 
 .conteudo{
     display: grid;
+    grid-template-columns: repeat(4, 24%);
+    column-gap: 1%;
+}
+
+
+.conteudo article{
+    border: 4px solid rgba(137, 43, 226, 0.331);
+    border-radius: 6px;
+    padding: 8px;
+    margin-bottom: 20px;
+    max-width: 100%;
+}
+
+.conteudo article:hover{
+    background-color: rgba(137, 43, 226, 0.13);
 }
 
 .conteudo img{
     max-width: 100%;
+    border-radius: 15px;
 }
 
+#produto{
+    margin-bottom: 32px;
+}
 
+h3{
+    font-size: 1.4em;
+    margin-bottom: 24px;
+    font-weight: bold;
+}
+
+.conteudo p{
+    font-size: 1.1em;
+    padding-bottom: 2px;
+    margin-bottom: 8px;
+}
+
+.conteudo button{
+    font-size: 1.2em;
+    font-weight: bold;
+    background-color:rgba(137, 43, 226, 0.605) ;
+    width: 100%;
+    color: white;
+    padding: 6px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.conteudo button:hover{
+    background-color:rgba(137, 43, 226, 0.929) 
+}
+
+@media screen  and (min-width:641px) and (max-width: 1024px){
+    
+    #sobre img {
+            max-width: 100%;
+    }
+
+
+    .container-flex{
+            display: block;
+    }
+
+    .conteudo{
+        display: grid;
+        grid-template-columns: repeat(2, 48%);
+        column-gap: 2%;
+    }
+
+    #sobre p{
+        font-size: 32px;
+    }
+
+    h2{
+        font-size: 36px;
+    }
+
+    #venda{
+        padding: 32px;
+    }
+
+    header li a{
+        font-size: 28px;
+    }
+
+    header > .container {
+        font-size: 32px;
+    }
+
+    .hamburguer{
+        width: 42px;
+
+    }
+    
+    .hamburguer span{
+        height: 4px;
+    }
+
+    h3{
+        font-size: 28px;
+    }
+    
+    .conteudo p{
+        font-size: 24px;
+    }
+    
+    .conteudo button{
+        font-size: 24px;
+
+    }
+}
+
+@media screen and (max-width: 640px) {
+    #sobre img {
+        max-width: 100%;
+    }
+
+
+    .container-flex{
+        display: block;
+    }
+
+    .conteudo{
+        display: block
+    }
+
+    #venda{
+        padding: 32px;
+        padding-top: 0;
+    }
+
+    #sobre{
+        padding-bottom: 0;
+    }
+
+    #sobre p{
+        padding-bottom: 16px;
+    }
+
+    header > .container {
+        font-size: 20px;
+    }
+
+    header img{
+        width: 50px;
+    }
+
+}
 
 
 
